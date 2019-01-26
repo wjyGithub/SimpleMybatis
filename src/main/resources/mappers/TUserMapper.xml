@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="mapper.TUserMapper">
+    <select id="selectByPrimarykey" resultType="entiy.TUser">
+        select id,name,age
+        FROM user
+        WHERE id = ?
+    </select>
+    <select id="selectAll" resultType="entiy.TUser">
+        select id,name,age
+        FROM user
+    </select>
+</mapper>
